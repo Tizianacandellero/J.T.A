@@ -30,3 +30,6 @@
     border-bottom-left-radius: 30px;
     transition: all 1s;
 }
+&:after, &:before{
+    
+}
