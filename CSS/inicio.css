@@ -53,6 +53,7 @@
         &:hover{
             border-top-right-radius: 0px;
             border-bottom-left-radius:0px;
+            background: rgba(0, 0, 0, .5);
         }
 
     }
