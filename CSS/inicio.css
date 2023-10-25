@@ -46,7 +46,13 @@
         &:before{
             bottom: -1px;
             right: -1px;
+            border-bottom: 5px solid rgb(18, 134, 125);
+            border-right: 5px solid rgb(28, 109, 78);
         }
+        &:hover{
+            
+        }
+
     }
     
 }
