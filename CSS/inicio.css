@@ -37,6 +37,10 @@
         position: absolute;
         border: 0px solid #867f7f;
         transition: all 1s;
+        &:after{
+            top: 1px;
+
+        }
     }
     
 }
