@@ -22,4 +22,5 @@
 .botonI{
     cursor: pointer;
     position: relative;
+    padding: 10px 30px;
 }
