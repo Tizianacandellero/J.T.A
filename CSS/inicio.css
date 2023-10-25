@@ -49,6 +49,7 @@
             border-bottom: 5px solid rgb(18, 134, 125);
             border-right: 5px solid rgb(28, 109, 78);
         }
+        /*hover se activa cuando el usuario se desplaza sobre un elemento con el cursor*/
         &:hover{
             
         }
