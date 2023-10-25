@@ -21,4 +21,5 @@
 }
 .botonI{
     cursor: pointer;
+    position: relative;
 }
