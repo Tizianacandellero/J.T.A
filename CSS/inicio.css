@@ -33,4 +33,5 @@
 /*after y before son usados para añadir contenido antes y despues del contenido al cual se le aplican los selectores*/
 &:after, &:before{
     content: " ";
+    width: 10px;
 }
