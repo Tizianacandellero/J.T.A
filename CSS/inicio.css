@@ -15,4 +15,5 @@
     height: 370px;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 }
