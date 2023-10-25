@@ -43,6 +43,9 @@
             border-top: 5px solid rgb(25, 10, 110);
             border-left: 5px solid rgb(28, 109, 78);
         }
+        &:before{
+            bottom: -1px;
+        }
     }
     
 }
