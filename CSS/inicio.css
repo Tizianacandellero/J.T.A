@@ -51,6 +51,7 @@
         }
         /*hover se activa cuando el usuario se desplaza sobre un elemento con el cursor*/
         &:hover{
+            border-top-right-radius: 0px;
             
         }
 
