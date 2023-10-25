@@ -13,4 +13,5 @@
 }
 #botonInicio{
     height: 370px;
+    display: flex;
 }
