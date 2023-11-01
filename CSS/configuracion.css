@@ -9,4 +9,5 @@ body{
 .config-container{
     text-align: left;
     padding: 50px;
+    border: 1px solid #fff;
 }
