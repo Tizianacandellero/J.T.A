@@ -35,3 +35,6 @@ h1{
 .container .switch .input{
     display: none;
 }
+.container . switch .rail{
+    position: relative;
+}
