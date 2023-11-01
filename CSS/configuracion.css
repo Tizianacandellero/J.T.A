@@ -32,3 +32,6 @@ h1{
     align-items: center;
     cursor: pointer;
 }
+.container .switch .input{
+    display: none;
+}
