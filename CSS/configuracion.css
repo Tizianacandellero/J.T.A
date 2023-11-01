@@ -29,4 +29,5 @@ h1{
     padding: 0 1.5 rem;
     border-radius: 0.8 rem;
     display: flex;
+    align-items: center;
 }
