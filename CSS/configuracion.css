@@ -26,5 +26,7 @@ h1{
 .container .switch{
     height: 80px;
     background-image: rgba(237, 237, 237, 0.961);
-    padding: 0.1 rem;
+    padding: 0 1.5 rem;
+    border-radius: 0.8 rem;
+    display: flex;
 }
