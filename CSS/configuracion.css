@@ -37,4 +37,6 @@ h1{
 }
 .container . switch .rail{
     position: relative;
+    width: 90px;
+    height: 30px;
 }
