@@ -54,3 +54,8 @@ h1{
     left: 0;
     transition: transform 0.4s;
 }
+.container .switch .indicator{
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+}
