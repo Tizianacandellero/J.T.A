@@ -46,4 +46,7 @@ h1{
     display: block;
     width: 36px;
     height: 36px;
+    background-image: linear-gradient(to right,  #b8cbb8 0%, #b8cbb8 0%, #84e37d 0%, #84e37d 33%, #68ce5d 66%, #68ce5d 100%);
+    border-radius: 50%;
+    position: absolute;
 }
