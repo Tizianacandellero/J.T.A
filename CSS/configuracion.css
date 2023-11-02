@@ -72,4 +72,7 @@ h1{
     height: 80px;
     background-image: rgba(237, 237, 237, 0.961);
     padding: 0 1.5rem;
+    border-radius: 0.8rem;
+    display: flex;
+    align-items: center;
 }
