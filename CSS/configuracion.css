@@ -68,3 +68,8 @@ h1{
 .container .switch .input:checked ~ .indicator{
     background-color: rgb(3, 61, 46);
 }
+.option{
+    height: 80px;
+    background-image: rgba(237, 237, 237, 0.961);
+    padding: 0 1.5rem;
+}
