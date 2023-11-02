@@ -9,6 +9,8 @@ body{
     border-radius: 50%;
     height: 50vh;
     width: 50vh;
+    gap: 0em;
+    background: rgb(255, 255, 255);
 }
 .circulo1{
     position: relative;
