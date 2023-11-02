@@ -1,6 +1,11 @@
 body{
     background: rgba(23, 20, 20, 0.961);
 }
+#caja2{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    
+}
 .circulo1{
     position: relative;
     transform: translate(-50%, -50%);
