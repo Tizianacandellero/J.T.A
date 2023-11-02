@@ -30,3 +30,7 @@ body{
     height: 50px;
     border-radius: 50%;
 }
+.circulo2{
+    position: relative;
+    transform: translate(-50%, -50%);
+}
