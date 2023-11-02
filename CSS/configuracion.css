@@ -58,4 +58,7 @@ h1{
     width: 15px;
     height: 15px;
     background-color: #fff;
+    border-radius: 50%;
+    margin-left: 1.5rem;
+    transition: 0.4s;
 }
