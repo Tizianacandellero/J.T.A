@@ -42,3 +42,8 @@ h1{
     background-color: #fff;
     border-radius: 3rem;
 }
+.container .switch .rail .circle{
+    display: block;
+    width: 36px;
+    height: 36px;
+}
