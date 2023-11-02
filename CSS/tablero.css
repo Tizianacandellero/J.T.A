@@ -1,3 +1,7 @@
 body{
     background: rgba(23, 20, 20, 0.961);
 }
+.circulo1{
+    position: relative;
+    transform: translate(-50%, -50%);
+}
