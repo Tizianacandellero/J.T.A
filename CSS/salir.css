@@ -29,4 +29,8 @@ body{
  .boton:hover{
     background-color: rgb(3, 3, 63);
  }
- 
+ .palabra{
+     text-align: center;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     color: #fff;
+ }
