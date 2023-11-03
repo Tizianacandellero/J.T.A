@@ -1,5 +1,7 @@
 body{
     background: rgba(23, 20, 20, 0.961);
+    text-align: center;
+    top: 20px;
 }
 #caja2{
     position: absolute;
@@ -62,4 +64,31 @@ body{
     width: 50px;
     height: 50px;
     border-radius: 50%;
+}
+.boton{
+        
+    text-decoration:none;
+    font-weight:600;
+    font-size:20px;
+    /*left: 0px;*/
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:90px;
+    padding-right:90px;
+    background-color: rgb(40, 41, 40);
+    border-radius: 35px;
+    color: #fff;
+    border-width: 6px;
+    border-left:6px ;
+    border-top: 6px;
+    margin-right: 850px;
+    
+}
+
+
+.boton:hover {
+background-color: rgb(221, 217, 217);
+}
+#centrar{
+margin-top: 25px;
 }
