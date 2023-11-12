@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&display=swap');
 body{
     top: 20px;
     text-align: center;
@@ -11,10 +12,61 @@ body{
 }
 
 .imagen{
-    border-radius:50%;
-    -webkit-border-radius:50%;
+    width: 800px;
+    height: 800px;
+    /*overflow: hidden;*/
+    position: relative;
+    /*margin: 200px auto;
+    border-radius: 20px;
+    /*box-shadow: 12px 12px 8px 8px beige;*/
+  
+}
+.imagen img{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
     box-shadow: 0px 0px 15px 15px black;
     -webkit-box-shadow: 0px 0px 15px 15px black;
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
+    /*width: 100%;
+    height: 100%;*/
 }
+.imagen ul{
+      
+    font-size: 30px;
+    color: rgb(140, 107, 212);
+    position: absolute;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+.imagen h1{
+    color: rgb(140, 107, 212);
+    font-size: 30px;
+    top: 50%;
+    left: 50%;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+#boton{
+          
+    text-decoration:none;
+    /*font-weight:600;
+    font-size:20px;
+    left: 0px;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:0px;
+    padding-right:100px;
+    margin-bottom: 50px;*/
+    background-color: rgb(58, 26, 24);
+    border-radius: 35px;
+    color: #fff;
+    border-width: 6px;
+    border-left:6px ;
+    border-top: 6px;
+    /*margin-right: 15px;*/
+    font-family: 'Edu TAS Beginner', cursive;
+          
+}
+#boton:hover{
+    background-color: rgb(58, 3, 63);
+}
+  
