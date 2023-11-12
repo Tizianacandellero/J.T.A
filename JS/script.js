@@ -1,18 +1,22 @@
-const width = 28;
+const width = 5;
 const grid = document.querySelector(".grid");
 const scoreDisplay = document.getElementById("score");
 let score = 0;
 const squares = [];
 
-// 0 - pac-dots
-// 1 - wall
-// 2 - ghost-lair
-// 3 - power-pellet
-// 4 - empty
-const layout=[
-    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 
+// 0 - espacio
+// 1 - azul
+// 2 - rojo
+// 3 - amarillo
+// 4 - verde
+const layout = [
+    1, 2, 0, 3, 4,
+    0, 0, 0, 0, 0,
+    0, 0, 3, 4, 1,
+    0, 0, 0, 2, 0,
+    0, 0, 0, 0, 0
 ];
-function createPacBoard() {
+function createDotsGame() {
     if (!grid) {
         console.error('El elemento grid no existe');
         return;
@@ -22,16 +26,19 @@ function createPacBoard() {
         grid.appendChild(square);
         squares.push(square);
         // añadiendo las clases según el layout
-        if (layout[i] === 0) {
-            square.classList.add("pac-dot");
-        } else if (layout[i] === 1) {
-            square.classList.add("cajas");
+        square.classList.add("vacio");
+        if (layout[i] === 1) {
+            square.classList.add("azul");
+        } else if (layout[i] === 2) {
+            square.classList.add("rojo");
         } else if (layout[i] === 3) {
-            square.classList.add("power-pellet");
+            square.classList.add("amarillo");
+        } else if (layout[i] === 4) {
+            square.classList.add("verde");
         }
     }
 }
-createPacBoard();
+createDotsGame();
 let pacmanCurrentIndex = 490;
 squares[pacmanCurrentIndex].classList.add("pacman");
 function control(e) {
