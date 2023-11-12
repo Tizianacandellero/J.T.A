@@ -1,0 +1,20 @@
+body{
+    top: 20px;
+    text-align: center;
+    background: black;
+}
+
+.nombre{
+   
+    background-color: floralwhite ;
+    
+}
+
+.imagen{
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px black;
+    -webkit-box-shadow: 0px 0px 15px 15px black;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}

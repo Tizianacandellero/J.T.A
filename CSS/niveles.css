@@ -1,0 +1,41 @@
+body{
+    text-align: center;
+    background: rgba(23, 20, 20, 0.961);
+    top: 20px;
+    
+}
+fieldset{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 400px;
+    margin-left: 400px;
+}
+.boton{
+        text-align: center;
+        text-decoration:none;
+        font-weight:600;
+        font-size:20px;
+        left: 0px;
+        padding-top:15px;
+        padding-bottom:15px;
+        padding-left:150px;
+        padding-right:150px;
+        background-color: rgb(24, 26, 24);
+        border-radius: 35px;
+        color: #fff;
+        border-width: 6px;
+        border-left:6px ;
+        border-top: 6px;
+        margin-right: 15px;
+        
+        }
+   
+ 
+        .boton:hover {
+            background-color: rgb(3, 3, 63);
+            }
+#palabra{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+}
