@@ -26,7 +26,6 @@ function createDotsGame() {
         grid.appendChild(square);
         squares.push(square);
         // añadiendo las clases según el layout
-        square.classList.add("vacio");
         if (layout[i] === 1) {
             square.classList.add("azul");
         } else if (layout[i] === 2) {
@@ -35,40 +34,70 @@ function createDotsGame() {
             square.classList.add("amarillo");
         } else if (layout[i] === 4) {
             square.classList.add("verde");
+        } else {
+            square.classList.add("vacio");
+
         }
     }
 }
+
+let DotsGameCurrentIndex = 0; // Inicializar en el primer índice
 createDotsGame();
-let pacmanCurrentIndex = 490;
-squares[pacmanCurrentIndex].classList.add("pacman");
-function control(e) {
-    squares[pacmanCurrentIndex].classList.remove("pacman");
-    switch (e.keyCode) {
-        case 37:
-            if (pacmanCurrentIndex % width !== 0 && !squares[pacmanCurrentIndex - 1].classList.contains('wall'))
-                pacmanCurrentIndex -= 1;
+
+function Dots(e) {
+    var elemento = e.target.classList[0];
+    console.log(elemento);
+    switch (elemento) {
+        case "azul": 
+            if (DotsGameCurrentIndex % width !== 0 && !squares[DotsGameCurrentIndex - 1].classList.contains('azul'))
+                DotsGameCurrentIndex -= 1;
             break;
-        case 38:
-            if (pacmanCurrentIndex - width >= 0 && !squares[pacmanCurrentIndex - width].classList.contains('wall'))
-                pacmanCurrentIndex -= width;
+        case "rojo": 
+            if (DotsGameCurrentIndex - width >= 0 && !squares[DotsGameCurrentIndex - width].classList.contains('rojo'))
+                DotsGameCurrentIndex -= width;
             break;
-        case 39:
-            if (pacmanCurrentIndex % width < width - 1 && !squares[pacmanCurrentIndex + 1].classList.contains('wall'))
-                pacmanCurrentIndex += 1;
+        case "amarillo": 
+            if (DotsGameCurrentIndex % width < width - 1 && !squares[DotsGameCurrentIndex + 1].classList.contains('amarillo'))
+                DotsGameCurrentIndex += 1;
             break;
-        case 40:
-            if (pacmanCurrentIndex + width < width * width && !squares[pacmanCurrentIndex + width].classList.contains('wall'))
-                pacmanCurrentIndex += width;
+        case "verde": 
+            if (DotsGameCurrentIndex + width < width * width && !squares[DotsGameCurrentIndex + width].classList.contains('verde'))
+                DotsGameCurrentIndex += width;
             break;
-    }
-    squares[pacmanCurrentIndex].classList.add("pacman");
-    pacDotEaten();
+        default:
+            break;
+        }
+
+    squares[DotsGameCurrentIndex].classList.add("DotsGame");
+    azulEaten();
 }
-document.addEventListener("keyup", control);
-function pacDotEaten() {
-    if (squares[pacmanCurrentIndex].classList.contains('pac-dot')) {
+
+document.addEventListener("click", Dots);
+
+function azulEaten() {
+    if (squares[DotsGameCurrentIndex].classList.contains('azul')) {
         score++;
         scoreDisplay.textContent = score;
-        squares[pacmanCurrentIndex].classList.remove('pac-dot');
+        squares[DotsGameCurrentIndex].classList.remove('azul');
     }
 }
+/*
+function createDotsGame() {
+    for (let i = 0; i < layout.length; i++) {
+        const square = document.createElement("div");
+        grid.appendChild(square);
+        squares.push(square);
+
+        if (layout[i] === 1) {
+            square.classList.add("azul");
+        } else if (layout[i] === 2) {
+            square.classList.add("rojo");
+        } else if (layout[i] === 3) {
+            square.classList.add("amarillo");
+        } else if (layout[i] === 4) {
+            square.classList.add("verde");
+        }else{
+            square.classList.add("vacio");
+        }
+    }
+}*/
